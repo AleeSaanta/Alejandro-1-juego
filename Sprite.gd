@@ -1,11 +1,11 @@
-extends Sprite
+extends Area2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 var velocitat = Vector2(300,300)
-
+var direccio = Vector2(0, 0)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	position = Vector2(500,300)
@@ -15,15 +15,17 @@ func _ready():
 #func _process(delta):
 #	pass
 func _process(delta):
-	position += velocitat * delta #delta són els segons que han passat
-	rotation_degrees += 100 * delta
+	direccio = Vector2(0,0)
+	if Input.is_action_pressed("dreta"):
+		direccio += Vector2(1,0)
+	if Input.is_action_pressed("esquerra"):
+		direccio += Vector2(-1,0)
+	if Input.is_action_pressed("abaix"):
+		direccio += Vector2(0,1)
+	if Input.is_action_pressed("adalt"):
+		direccio += Vector2(0,-1)
+	position += direccio.normalized() * velocitat * delta #delta són els segons que han passat
+	
 
 
-	if position.x >= 975 or position.x <= 50:
-		velocitat.x *= -1
-	if position.y >= 550:
-		position.y = 550
-		velocitat.y *= -1
-	if position.y <= 0:
-		position.y = 0
-		velocitat.y *= -1
+	

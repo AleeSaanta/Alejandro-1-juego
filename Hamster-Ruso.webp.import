@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/calamardo turbio.jpg-50879f9aa1654c172d4c08f2a1c93375.stex"
+path="res://.import/Hamster-Ruso.webp-e9a7a3c92d3e6abf8deb626f73464829.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://calamardo turbio.jpg"
-dest_files=[ "res://.import/calamardo turbio.jpg-50879f9aa1654c172d4c08f2a1c93375.stex" ]
+source_file="res://Hamster-Ruso.webp"
+dest_files=[ "res://.import/Hamster-Ruso.webp-e9a7a3c92d3e6abf8deb626f73464829.stex" ]
 
 [params]
 
