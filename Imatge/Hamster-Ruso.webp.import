@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bob esponja turbio.jpg-790fbd7209f0b2c95c00a0b0ca886c35.stex"
+path="res://.import/Hamster-Ruso.webp-efe36b57a89ff49e6632c817e1577165.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bob esponja turbio.jpg"
-dest_files=[ "res://.import/bob esponja turbio.jpg-790fbd7209f0b2c95c00a0b0ca886c35.stex" ]
+source_file="res://Imatge/Hamster-Ruso.webp"
+dest_files=[ "res://.import/Hamster-Ruso.webp-efe36b57a89ff49e6632c817e1577165.stex" ]
 
 [params]
 

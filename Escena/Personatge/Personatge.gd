@@ -8,7 +8,7 @@ var velocitat = Vector2(300,300)
 var direccio = Vector2(0, 0)
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	position = Vector2(500,300)
+	pass #position = Vector2(500,300)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,4 +28,14 @@ func _process(delta):
 	
 
 
-	
+func _on_Personatge_area_entered(area):
+	if area.name == "Zona":
+		modulate = Color(1, 0, 0)
+	elif area.name == "Zona2":
+		modulate = Color(1, 0, 1)
+	area.modulate = Color(0, 1, 0)
+
+
+func _on_Personatge_area_exited(area):
+	modulate = Color(1, 1 , 1)
+	area.modulate = Color(1, 1, 1)
