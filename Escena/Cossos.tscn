@@ -7,7 +7,7 @@
 [ext_resource path="res://Escena/Personatge/Green/alienGreen_walk1.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 33, 69 )
+extents = Vector2( 35.5, 74 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -31,12 +31,11 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 4, 9 )
+position = Vector2( 1.5, 3 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 2, -48 )
 frames = SubResource( 2 )
-animation = "corre"
-frame = 1
+animation = "salta"
 playing = true
