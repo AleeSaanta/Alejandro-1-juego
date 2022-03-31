@@ -1,84 +1,181 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Escena/Cossos.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Escena/Terra.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Escena/SueloDesierto.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escena/Final.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Escena/bloquecaidalibre.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Escena/teleportPrincipio.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Escena/MuertePinchos.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escena/BloqueDesierto.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Escena/Areamuertepantalla1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Escena/Personatge/backgroundColorDesert.png" type="Texture" id=7]
+[ext_resource path="res://Imatge/backgroundColorDesert.png" type="Texture" id=7]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2( -71, 67 )
 
 [node name="BackgroundColorDesert" type="Sprite" parent="."]
-position = Vector2( 2976.25, 100 )
-scale = Vector2( 5.79248, 2.92627 )
+position = Vector2( 2907.63, 29 )
+scale = Vector2( 5.92261, 2.92627 )
 texture = ExtResource( 7 )
 
-[node name="Terra" parent="." instance=ExtResource( 2 )]
-position = Vector2( 456, 497 )
-
-[node name="Terra3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3592, 721 )
-
-[node name="Terra2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1150, 387 )
-
-[node name="Terra4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1996, 386 )
-
-[node name="Terra5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2801, 800 )
-
-[node name="Terra6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4308, 568 )
-
-[node name="Terra7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4007, 137 )
-
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 259, 373 )
+position = Vector2( 155, 732 )
 
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+position = Vector2( 0, 2 )
 current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = 0
+limit_right = 5942
 
 [node name="Final" parent="." instance=ExtResource( 3 )]
-position = Vector2( 3729, -22 )
-
-[node name="muerte" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2520, 682 )
-
-[node name="muerte2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3009, 506 )
-
-[node name="muerte3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4114, 418 )
-
-[node name="muerte5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 3864, 18 )
-
-[node name="muerte4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4127, 18 )
-
-[node name="StaticBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4489, 390 )
-
-[node name="StaticBody2D2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4447, 72 )
-
-[node name="StaticBody2D3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 4633, 252 )
+position = Vector2( 5738, 656 )
 
 [node name="Muertepantalla1" parent="." instance=ExtResource( 6 )]
 position = Vector2( 130, 1410 )
 
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 30, 858 )
+
+[node name="Pinchos" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1048, 773 )
+
+[node name="Pinchos2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1182, 773 )
+
+[node name="Pinchos4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1800, 772 )
+
+[node name="Pinchos5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1933, 772 )
+
+[node name="Pinchos7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2584, 652 )
+
+[node name="Pinchos6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2613, 653 )
+
+[node name="Pinchos10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3955, 762 )
+
+[node name="Pinchos11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4241, 763 )
+
+[node name="Pinchos14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5098, 763 )
+
+[node name="Pinchos13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4834, 760 )
+
+[node name="Pinchos12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4529, 763 )
+
+[node name="Pinchos9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3669, 762 )
+
+[node name="Pinchos8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3373, 764 )
+
+[node name="Pinchos3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1666, 772 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 728, 467 )
+
+[node name="StaticBody2D12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1622, 651 )
+
+[node name="StaticBody2D16" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2626, 701 )
+
+[node name="StaticBody2D23" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2626, 701 )
+
+[node name="StaticBody2D22" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2626, 701 )
+
+[node name="StaticBody2D21" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4210, 693 )
+
+[node name="StaticBody2D30" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5942, 388 )
+
+[node name="StaticBody2D29" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5032, 274 )
+
+[node name="StaticBody2D28" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4772, 464 )
+
+[node name="StaticBody2D27" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4489, 615 )
+
+[node name="StaticBody2D20" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3915, 565 )
+
+[node name="StaticBody2D19" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3623, 568 )
+
+[node name="StaticBody2D26" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3623, 568 )
+
+[node name="StaticBody2D25" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3772, 170 )
+
+[node name="StaticBody2D24" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3478, 170 )
+
+[node name="StaticBody2D18" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3332, 568 )
+
+[node name="StaticBody2D17" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3031, 693 )
+
+[node name="StaticBody2D15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2487, 701 )
+
+[node name="StaticBody2D14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2349, 700 )
+
+[node name="StaticBody2D13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2211, 700 )
+
+[node name="StaticBody2D11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 726, 349 )
+
+[node name="StaticBody2D10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 730, 583 )
+
+[node name="StaticBody2D9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 319, 703 )
+
+[node name="StaticBody2D8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 729, 703 )
+
+[node name="StaticBody2D7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 595, 467 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 594, 584 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 593, 703 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 457, 585 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 457, 703 )
+
 [connection signal="body_entered" from="Final" to="KinematicBody2D" method="_on_Final_body_entered"]
-[connection signal="body_entered" from="muerte" to="KinematicBody2D" method="_on_muerte_body_entered"]
-[connection signal="body_entered" from="muerte2" to="KinematicBody2D" method="_on_muerte_body_entered"]
-[connection signal="body_entered" from="muerte3" to="KinematicBody2D" method="_on_muerte_body_entered"]
-[connection signal="body_entered" from="muerte5" to="KinematicBody2D" method="_on_muerte_body_entered"]
-[connection signal="body_entered" from="muerte4" to="KinematicBody2D" method="_on_muerte_body_entered"]
 [connection signal="body_entered" from="Muertepantalla1" to="KinematicBody2D" method="_on_Muertepantalla1_body_entered"]
+[connection signal="body_entered" from="Pinchos" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos2" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos4" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos5" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos7" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos6" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos10" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos11" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos14" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos13" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos12" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos9" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos8" to="KinematicBody2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Pinchos3" to="KinematicBody2D" method="_on_Area2D_body_entered"]

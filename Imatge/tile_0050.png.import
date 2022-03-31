@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backgroundColorDesert.png-ec5086ea595590bb6622d6efc6e88e1f.stex"
+path="res://.import/tile_0050.png-39594270eed5de7cd5f80019bcdfa955.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Escena/Personatge/backgroundColorDesert.png"
-dest_files=[ "res://.import/backgroundColorDesert.png-ec5086ea595590bb6622d6efc6e88e1f.stex" ]
+source_file="res://Imatge/tile_0050.png"
+dest_files=[ "res://.import/tile_0050.png-39594270eed5de7cd5f80019bcdfa955.stex" ]
 
 [params]
 

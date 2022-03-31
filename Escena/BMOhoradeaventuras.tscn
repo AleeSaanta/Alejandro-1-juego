@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Imatge/platformChar_walk2.png" type="Texture" id=1]
+[ext_resource path="res://Imatge/platformChar_walk1.png" type="Texture" id=2]
+[ext_resource path="res://Imatge/platformChar_idle.png" type="Texture" id=3]
+[ext_resource path="res://Imatge/platformChar_jump.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "quiet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "salta",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "corre",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 51.75, 81.5 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 121, 135 )
+scale = Vector2( 2.41667, 2.46875 )
+frames = SubResource( 1 )
+animation = "corre"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 122.25, 171.5 )
+shape = SubResource( 2 )
