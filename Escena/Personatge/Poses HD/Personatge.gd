@@ -36,11 +36,7 @@ func anima(velocitat):
 		
 	if velocitat.y < 0:
 		$AnimatedSprite.play("salta")
-		
 
-
-func _on_muerte_body_entered(body):
-	get_tree().change_scene("res://Escena/Pantalla1.tscn")
 
 
 func _on_Area2D_body_entered(body):
@@ -51,3 +47,7 @@ func _on_Area2D_body_entered(body):
 func _on_Muertepantalla1_body_entered(body):
 	get_tree().change_scene("res://Escena/Pantalla1.tscn")
 
+
+
+func _on_Final_body_entered(body):
+	get_tree().change_scene("res://Escena/Pantalla2.tscn")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Escena/Cossos.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Escena/SueloDesierto.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 220, 525 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+zoom = Vector2( 2, 2 )
+limit_left = 0
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 33, 634 )

@@ -21,15 +21,16 @@ position = Vector2( 155, 732 )
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
 position = Vector2( 0, 2 )
 current = true
-zoom = Vector2( 1.5, 1.5 )
+zoom = Vector2( 1.6, 1.6 )
 limit_left = 0
 limit_right = 5942
+limit_bottom = 1174
 
 [node name="Final" parent="." instance=ExtResource( 3 )]
-position = Vector2( 5738, 656 )
+position = Vector2( 5734, 647 )
 
 [node name="Muertepantalla1" parent="." instance=ExtResource( 6 )]
-position = Vector2( 130, 1410 )
+position = Vector2( -113, 1368 )
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( 30, 858 )
@@ -83,19 +84,10 @@ position = Vector2( 728, 467 )
 position = Vector2( 1622, 651 )
 
 [node name="StaticBody2D16" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2626, 701 )
-
-[node name="StaticBody2D23" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2626, 701 )
-
-[node name="StaticBody2D22" parent="." instance=ExtResource( 5 )]
-position = Vector2( 2626, 701 )
+position = Vector2( 2624, 701 )
 
 [node name="StaticBody2D21" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4210, 693 )
-
-[node name="StaticBody2D30" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5942, 388 )
 
 [node name="StaticBody2D29" parent="." instance=ExtResource( 5 )]
 position = Vector2( 5032, 274 )
